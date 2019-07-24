@@ -11,12 +11,14 @@ import UserCreate from "./components/user-create.component";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <br />
-      <Route path="/" exact component={ExercisesList} />
-      <Route path="/edit/:id" exact component={ExercisesEdit} />
-      <Route path="/create" exact component={ExercisesCreate} />
-      <Route path="/user" exact component={UserCreate} />
+      <div className="container">
+        <Navbar />
+        <br />
+        <Route path="/" exact component={ExercisesList} />
+        <Route path="/edit/:id" exact component={ExercisesEdit} />
+        <Route path="/create" exact component={ExercisesCreate} />
+        <Route path="/user" exact component={UserCreate} />
+      </div>
     </Router>
 
   );
